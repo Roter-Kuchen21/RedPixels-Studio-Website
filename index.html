@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedPixels Studio - Terms of Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: linear-gradient(to right, #000000, #1f1f1f);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(to right, #000000, #1f1f1f);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 30px;
+            background: #1e40c7;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .tab {
+            padding: 15px 25px;
+            background: white;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .tab.active {
+            background: #de1819;
+            color: #000000;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        h2 {
+            color: #de1819;
+            margin: 25px 0 15px;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: #de1819;
+            margin: 20px 0 10px;
+        }
+
+        h4 {
+            color: #4a6cf7;
+            margin: 25px 0 15px;
+            font-size: 1.8rem;
+        }
+
+        h5 {
+            margin-bottom: 15px;
+            color: black
+        }
+
+        h6 {
+            margin-bottom: 15px;
+            color: lightgrey;
+            font-size: 1.0rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: lightgrey
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: lightgrey
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .app-store-btn, .google-play-btn, .discord-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            min-width: 180px;
+        }
+
+        .app-store-btn {
+            background: #000;
+            color: white;
+        }
+
+        .app-store-btn:hover {
+            background: #333;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .google-play-btn {
+            background: #4a6cf7;
+            color: white;
+        }
+
+        .google-play-btn:hover {
+            background: #3a5cd6;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(74, 108, 247, 0.6);
+        }
+
+        .discord-btn {
+            background: #5865f2;
+            color: white;
+        }
+
+        .discord-btn:hover {
+            background: #4752c4;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(88, 101, 242, 0.6);
+        }
+
+        .btn-icon {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #de1819;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .social-links {
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .tabs {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .app-store-btn, .google-play-btn, .discord-btn {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+
+        .view-instructions {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .download-heading {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #de1819;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="RedPixels Studio Transparent.png" class="logo" alt="RedPixels Studio Logo" onerror="this.style.display='none'; document.getElementById('logo-placeholder').style.display='flex';">
+            <h1>Egg Guardians TD</h1>
+            <p>E-Mail: egg.guardians.td@gmail.com</p>
+        </header>
+
+        <div class="content">
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('terms')">Terms of Service</div>
+                <div class="tab" onclick="switchTab('privacy')">Privacy Policy</div>
+                <div class="tab" onclick="switchTab('support')">Support</div>
+            </div>
+
+            <div id="terms" class="tab-content active">
+                <h2>Terms of Service</h2>
+                <p>Last Updated: September 4, 2025</p>
+
+                <h3>1. Acceptance of Terms</h3>
+                <p>By accessing or playing Egg Guardians TD, you agree to be bound by these Terms of Service and all applicable laws and regulations.</p>
+
+                <h3>2. User Accounts</h3>
+                <p>When you create an account with us, you must provide accurate and complete information. You are solely responsible for the activity that occurs on your account.</p>
+
+                <h3>3. In-App Purchases</h3>
+                <p>The Game includes in-app purchases that allow you to buy virtual items. All purchases are final and non-refundable.</p>
+
+                <h3>4. User Conduct</h3>
+                <p>You agree not to engage in any of the following prohibited activities:</p>
+                <ul>
+                    <li>Copying, distributing, or disclosing any part of the Game in any medium</li>
+                    <li>Using any automated system to access the Game</li>
+                    <li>Interfering with or disrupting the Game or servers</li>
+                    <li>Attempting to bypass any measures we use to prevent restricted access</li>
+                </ul>
+
+                <h3>5. Termination</h3>
+                <p>We may terminate or suspend your account immediately, without prior notice, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+            </div>
+
+            <div id="privacy" class="tab-content">
+                <h2>Privacy Policy</h2>
+                <p>Your privacy is important to us. This Privacy Policy explains what personal data we collect and how we use it.</p>
+
+                <h3>Information We Collect</h3>
+                <p>We may collect information about you in a variety of ways:</p>
+                <ul>
+                    <li>Information you provide by filling out forms in the Game</li>
+                    <li>Records of correspondence when you contact us</li>
+                    <li>Details of transactions you carry out through the Game</li>
+                    <li>Technical data such as IP address, device type, and operating system</li>
+                </ul>
+
+                <h3>How We Use Your Information</h3>
+                <p>We use the information we collect in the following ways:</p>
+                <ul>
+                    <li>To provide and maintain the Game</li>
+                    <li>To notify you about changes to the Game</li>
+                    <li>To provide customer support</li>
+                    <li>To gather analysis or valuable information to improve the Game</li>
+                </ul>
+            </div>
+
+            <div id="support" class="tab-content">
+                <h2>Support</h2>
+                <p>We're here to help you with any problems or questions you might have with our Game.</p>
+
+                <h3>Frequently Asked Questions</h3>
+                <p><strong>Q: How do I restore my purchases?</strong><br>
+                A: Go to the Settings menu and tap on "Restore Purchases".</p>
+
+                <p><strong>Q: The Game is running slowly on my device. What can I do?</strong><br>
+                A: Try closing other applications running in the background and ensure you have a stable internet connection.</p>
+
+                <p><strong>Q: How do I contact customer support?</strong><br>
+                A: You can reach us at egg.guardians.td@gmail.com. We typically respond within 24-48 hours.</p>
+
+                <h3>Contact Us</h3>
+                <p>If you have any questions or concerns about our Terms of Service, Privacy Policy, or need technical support, please contact us at:</p>
+                <h6>E-Mail: egg.guardians.td@gmail.com</h6>
+            </div>
+
+            <h3 class="download-heading">Download Egg Guardians TD Now!</h3>
+            <div class="cta-buttons">
+                <!-- <a href="#" class="app-store-btn">
+                    <i class="btn-icon fab fa-apple"></i> App Store
+                </a>
+                <a href="#" class="google-play-btn">
+                    <i class="btn-icon fab fa-google-play"></i> Google Play
+                </a> -->
+                <a href="https://discord.gg/qvVjwN2Bpx" target="_blank" class="discord-btn">
+                    <i class="btn-icon fab fa-discord"></i> Join Discord
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <h5>&copy; 2025 RedPixels Studio. All Rights Reserved.</h5>
+            <div class="social-links">
+                <!--<a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="https://www.instagram.com/egg_guardians_td?igsh=MXdmczNhNGRnOGwyYQ=="><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.gg/qvVjwN2Bpx" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function switchTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+
+            // Update active tab button
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Find the button that was clicked and make it active
+            event.target.classList.add('active');
+        }
+
+        // Simple animation for buttons
+        document.querySelectorAll('.app-store-btn, .google-play-btn, .discord-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                btn.style.transform = 'translateY(-3px)';
+            });
+
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Check if logo loaded correctly
+        window.addEventListener('load', function() {
+            const logo = document.querySelector('.logo');
+            const placeholder = document.getElementById('logo-placeholder');
+
+            if (logo && logo.naturalWidth === 0) {
+                // Logo failed to load
+                logo.style.display = 'none';
+                placeholder.style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+</html>
